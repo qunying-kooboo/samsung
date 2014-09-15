@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<!--[if IE 9]>     <html class="ie ie9 lte9">           <![endif]-->
+<!--[if gt IE 9]>  <html>                               <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+
+<head>
+    <!--#include file="inc/header-public.html"-->
+    <title>samsung</title>
+    <!--#include file="inc/header-script-link.html"-->
+</head>
+<body>
+    <!--#include file="inc/header.html"-->
+    <!--#include file="wgt/slider.html"-->
+    <section>
+    </setion>
+</body>
+</html>
