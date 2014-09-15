@@ -53,3 +53,337 @@ a img {
 /* line 116, ../../Program Files (x86)/Koala/rubygems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
+
+/* ** = GLOBAL = ** */
+/* line 10, scss/partials/_base.scss */
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #626262;
+  font-size: 16px;
+  line-height: 1; }
+
+/* line 16, scss/partials/_base.scss */
+strong {
+  font-weight: bold; }
+
+/* line 19, scss/partials/_base.scss */
+em {
+  font-style: italic; }
+
+/* line 22, scss/partials/_base.scss */
+a {
+  color: #0c4da2;
+  text-decoration: none; }
+
+/* line 26, scss/partials/_base.scss */
+a:hover {
+  color: #000; }
+
+/* line 29, scss/partials/_base.scss */
+p {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 20px; }
+
+/* line 34, scss/partials/_base.scss */
+h1 {
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 20px; }
+
+/* line 39, scss/partials/_base.scss */
+h2 {
+  color: #1f1f1f;
+  font-size: 18px;
+  margin-bottom: 20px; }
+
+/* line 44, scss/partials/_base.scss */
+h3 {
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+/* line 4, scss/partials/_flexslider.scss */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none; }
+
+/* line 10, scss/partials/_flexslider.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 16, scss/partials/_flexslider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0; }
+
+/* line 21, scss/partials/_flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+  position: relative;
+  -webkit-backface-visibility: hidden; }
+
+/* line 27, scss/partials/_flexslider.scss */
+.flexslider .slides img {
+  display: block; }
+
+/* line 31, scss/partials/_flexslider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize; }
+
+/* line 35, scss/partials/_flexslider.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/* line 44, scss/partials/_flexslider.scss */
+html[xmlns] .slides {
+  display: block; }
+
+/* line 48, scss/partials/_flexslider.scss */
+* html .slides {
+  height: 1%; }
+
+/* line 52, scss/partials/_flexslider.scss */
+.no-js .slides > li:first-child {
+  display: block; }
+
+/* line 56, scss/partials/_flexslider.scss */
+.flexslider {
+  margin: 0;
+  position: relative;
+  zoom: 1; }
+
+/* line 62, scss/partials/_flexslider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease; }
+
+/* line 69, scss/partials/_flexslider.scss */
+.loading .flex-viewport {
+  max-height: 300px; }
+
+/* line 73, scss/partials/_flexslider.scss */
+.flexslider .slides {
+  zoom: 1; }
+
+/* line 77, scss/partials/_flexslider.scss */
+.carousel li {
+  margin-right: 5px; }
+
+/* line 81, scss/partials/_flexslider.scss */
+.flex-direction-nav {
+  *height: 0; }
+
+/* line 85, scss/partials/_flexslider.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0.3 !important;
+  filter: alpha(opacity=30);
+  cursor: default; }
+
+/* line 91, scss/partials/_flexslider.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden; }
+
+/* line 97, scss/partials/_flexslider.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0; }
+
+/* line 103, scss/partials/_flexslider.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer; }
+
+/* line 110, scss/partials/_flexslider.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1; }
+
+/* line 114, scss/partials/_flexslider.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default; }
+
+@media screen and (max-width: 860px) {
+  /* line 120, scss/partials/_flexslider.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 0; }
+
+  /* line 124, scss/partials/_flexslider.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0; } }
+/* Control Nav */
+/* line 131, scss/partials/_flexslider.scss */
+.flex-control-nav {
+  position: absolute;
+  bottom: 15px;
+  right: 45px;
+  text-align: center; }
+
+/* line 138, scss/partials/_flexslider.scss */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  height: 4px;
+  width: 40px;
+  background-color: #000;
+  margin-right: 10px; }
+
+/* line 149, scss/partials/_flexslider.scss */
+.flex-control-paging li a {
+  display: block;
+  cursor: pointer;
+  text-indent: -9999px;
+  height: 4px;
+  width: 40px;
+  background-color: #000; }
+
+/* line 158, scss/partials/_flexslider.scss */
+.flex-control-paging li a:hover {
+  background-color: #4cb1ca; }
+
+/* line 162, scss/partials/_flexslider.scss */
+.flex-control-paging li a.flex-active {
+  background-color: #4cb1ca;
+  cursor: default; }
+
+/* line 167, scss/partials/_flexslider.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden; }
+
+/* line 173, scss/partials/_flexslider.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0; }
+
+/* line 179, scss/partials/_flexslider.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer; }
+
+/* line 186, scss/partials/_flexslider.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1; }
+
+/* line 190, scss/partials/_flexslider.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default; }
+
+/* line 1, scss/partials/_layout.scss */
+header, .slider {
+  width: 960px;
+  margin: 0 auto; }
+
+/* line 1, scss/partials/_main.scss */
+.clear {
+  clear: both; }
+
+/* line 4, scss/partials/_main.scss */
+.logo {
+  float: left;
+  width: 247px;
+  height: 84px;
+  margin-top: 20px;
+  margin-right: 23px; }
+
+/* line 11, scss/partials/_main.scss */
+.search {
+  float: right;
+  width: 200px;
+  text-align: right;
+  margin-top: 10px; }
+  /* line 16, scss/partials/_main.scss */
+  .search .field {
+    border: 1px solid #eee;
+    width: 165px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 30px 0 5px;
+    outline: none; }
+
+/* line 26, scss/partials/_main.scss */
+.extramenu {
+  float: right;
+  width: 400px;
+  text-align: right;
+  margin-top: 17px;
+  margin-right: 20px;
+  font-size: 14px; }
+  /* line 33, scss/partials/_main.scss */
+  .extramenu a {
+    color: #000; }
+    /* line 35, scss/partials/_main.scss */
+    .extramenu a:hover {
+      color: #0c4da2; }
+
+/* line 40, scss/partials/_main.scss */
+nav {
+  position: relative;
+  text-align: right;
+  top: -20px;
+  width: 960px; }
+  /* line 45, scss/partials/_main.scss */
+  nav li {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 30px; }
+    /* line 49, scss/partials/_main.scss */
+    nav li a {
+      color: #000;
+      display: inline-block;
+      line-height: 40px;
+      border-bottom: 5px solid #0c4da2; }
+    /* line 56, scss/partials/_main.scss */
+    nav li.current a {
+      border-bottom-color: #fff;
+      font-weight: bold;
+      color: #0c4da2; }
+  /* line 63, scss/partials/_main.scss */
+  nav::after {
+    content: '';
+    position: absolute;
+    width: 960px;
+    top: 40px;
+    left: 0px;
+    border-bottom: 5px solid #0c4da2;
+    z-index: -1; }
+
+/* line 74, scss/partials/_main.scss */
+.slider {
+  position: relative;
+  margin-top: -20px;
+  border-bottom: 1px solid #ddd;
+  background: url("images/slider-bg.png");
+  max-height: 255px !important;
+  overflow: hidden; }
+  /* line 82, scss/partials/_main.scss */
+  .slider li a {
+    float: right;
+    display: block; }
